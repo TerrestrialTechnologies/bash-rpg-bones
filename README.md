@@ -10,6 +10,7 @@ a simple temrinal based game in bash
 - Win/Loss conditions
 
 ##Running 
+
 '''bash
 chmod +x battle.sh
 ./battle.sh
