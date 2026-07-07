@@ -27,8 +27,8 @@ echo
 read -p "choose: " choice
 
 if [ "$choice" = "1" ]; then
-damage=$(( Random % 16 + 10 ))
-crit=$(( Random % 5 ))
+damage=$(( RANDOM % 16 + 10 ))
+crit=$(( RANDOM % 5 ))
 
 	if [ $crit -eq 0 ]; then 
 	   damage=$(( damage * 2 ))
@@ -40,8 +40,8 @@ crit=$(( Random % 5 ))
 
 elif [ "$choice" = "2" ]; then 
       hit=$(( RANDOM % 26 + 20 ))
-      enemy_hp=$(( enemy_hp - damage ))
-	echo "you hit enemy for $damage damage"
+      enemy_hp=$(( enemy_hp - hit ))
+	echo "you hit enemy for $hit damage"
 
 elif [ "$choice" = "3" ]; then
      if [ $potions -gt 0 ]; then
